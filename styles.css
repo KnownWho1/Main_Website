@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    cursor: url('./assets/cursors/homepage_cur.png'), auto;
 }
 
 header {
