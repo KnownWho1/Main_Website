@@ -26,12 +26,37 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 1rem;
+    margin: 0 1.5rem;
+    position: relative;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #f39c12; /* Accent color for underline */
+    transition: width 0.3s; /* Animate the width */
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Positioning below the text */
+    transform: translateX(-50%); /* Center the underline */
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Change text color on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand underline on hover */
 }
 
 main {
