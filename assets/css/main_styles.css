@@ -65,14 +65,14 @@ main {
 }
 
 .content {
-    flex: 3; /* Main content area */
+    flex: 3; /* Main content area takes 3 parts of space */
+    margin-right: 1rem; /* Space between content and sidebar */
 }
 
 .sidebar {
-    flex: 1; /* Sidebar area */
+    flex: 1; /* Sidebar takes 1 part of space */
     background: #fff;
     padding: 1rem;
-    margin-left: 1rem; /* Space between content and sidebar */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
