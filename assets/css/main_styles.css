@@ -60,7 +60,44 @@ nav ul li a:hover::after {
 }
 
 main {
+    display: flex; /* Use flexbox for layout */
     padding: 1rem;
+}
+
+.content {
+    flex: 3; /* Main content area */
+}
+
+.sidebar {
+    flex: 1; /* Sidebar area */
+    background: #fff;
+    padding: 1rem;
+    margin-left: 1rem; /* Space between content and sidebar */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 0.5rem 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #f39c12; /* Hover color */
 }
 
 h2 {
