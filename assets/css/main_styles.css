@@ -158,3 +158,49 @@ footer {
 #close-popup:hover {
     background: #1286f3;
 }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    color: #1286f3;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.about .interests {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.about .interests h3 {
+    margin: 0.5rem 0;
+}

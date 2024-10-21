@@ -13,9 +13,10 @@
 
     <link rel="stylesheet" href="assets/css/main_styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Tech Blog</h1>
+        <h1>Trust404</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,31 +28,37 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Tutorials</h2>
-        <article>
-            <h3>Tutorial Title 1</h3>
-            <p>Short description of the tutorial...</p>
-            <a href="#">Read More</a>
-        </article>
-        <article>
-            <h3>Tutorial Title 2</h3>
-            <p>Short description of the tutorial...</p>
-            <a href="#">Read More</a>
-        </article>
-        
-    </main>
+    <div class="container">
+        <main>
+            <div class="content">
+                <h2>Tutorials</h2>
+                <article>
+                    <h3>Tutorial Title 1</h3>
+                    <p>Short description of the tutorial...</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article>
+                    <h3>Tutorial Title 2</h3>
+                    <p>Short description of the tutorial...</p>
+                    <a href="#">Read More</a>
+                </article>
+            </div>
+
+            <aside class="sidebar">
+                <h2>Additional Links</h2>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </aside>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2024 Trust404. All rights reserved.</p>
     </footer>
-    <div id="construction-popup" class="popup">
-        <div class="popup-content">
-            <h2>Under Construction</h2>
-            <p>This page is currently under construction. Please check back later!</p>
-            <button id="close-popup">Close</button>
-        </div>
-    </div>
-    <script src="/assets/js/main_script.js"></script>
+    <script src="assets/js/main_script.js"></script>
 </body>
 </html>
