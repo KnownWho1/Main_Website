@@ -41,7 +41,7 @@ nav ul li a::after {
     display: block;
     height: 2px;
     width: 0;
-    background: #f39c12; /* Accent color for underline */
+    background: #1286f3; /* Accent color for underline */
     transition: width 0.3s; /* Animate the width */
     position: absolute;
     left: 50%;
@@ -50,7 +50,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover {
-    color: #f39c12; /* Change text color on hover */
+    color: #1286f3; /* Change text color on hover */
     transform: translateY(-2px); /* Lift effect */
 }
 
@@ -101,7 +101,7 @@ main {
 }
 
 .sidebar ul li a:hover {
-    color: #f39c12; /* Hover color */
+    color: #1286f3; /* Hover color */
 }
 
 h2 {
@@ -149,12 +149,12 @@ footer {
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
-    background: #f39c12;
+    background: #1286f3;
     color: white;
     cursor: pointer;
     border-radius: 5px;
 }
 
 #close-popup:hover {
-    background: #e67e22;
+    background: #1286f3;
 }
