@@ -58,18 +58,23 @@ nav ul li a:hover::after {
     width: 100%; /* Expand underline on hover */
 }
 
+.container {
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the container */
+    padding: 1rem; /* Add some padding */
+}
+
 main {
     display: flex; /* Use flexbox for layout */
-    padding: 1rem;
 }
 
 .content {
-    flex: 3; /* Main content area takes 3 parts of space */
+    flex: 3; /* Main content area */
     margin-right: 1rem; /* Space between content and sidebar */
 }
 
 .sidebar {
-    flex: 1; /* Sidebar takes 1 part of space */
+    flex: 1; /* Sidebar area */
     background: #fff;
     padding: 1rem;
     border-radius: 5px;
@@ -117,9 +122,6 @@ footer {
     padding: 1rem 0;
     background: #333;
     color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 .popup {
