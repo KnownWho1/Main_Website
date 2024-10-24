@@ -3,16 +3,24 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1e1e1e;
+    color: #c5c5c5;
 }
 
 header {
-    background: #333;
+    background: #2a2a2a;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
+
+.featured-post, .recent-posts {
+    background: #2a2a2a;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
 
 header h1 {
     margin: 0;
@@ -75,7 +83,7 @@ main {
 
 .sidebar {
     flex: 1; /* Sidebar area */
-    background: #fff;
+    background: #2a2a2a;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -96,7 +104,7 @@ main {
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #333;
+    color: #c5c5c5;
     transition: color 0.3s;
 }
 
@@ -110,18 +118,18 @@ h2 {
 }
 
 .article, .post-preview {
-    background: #fff;
+    background: #272727;
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    background: #2a2a2a;
+    color: #c5c5c5;
 }
 
 .popup {
@@ -141,7 +149,7 @@ footer {
 .popup-content {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #000000;
     border-radius: 10px;
 }
 
@@ -149,7 +157,7 @@ footer {
     margin-top: 20px;
     padding: 10px 20px;
     border: none;
-    background: #1286f3;
+    background: #0d467c;
     color: white;
     cursor: pointer;
     border-radius: 5px;
@@ -165,9 +173,9 @@ footer {
     align-items: center;
     margin: 1rem;
     padding: 2rem;
-    background: #fff;
+    background: #2a2a2a;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
 .about h2 {
@@ -194,10 +202,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f4f4f4;
+    background: #252525;
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     width: 100%;
 }
 
@@ -221,6 +229,6 @@ footer {
     background: #333;
     color: #fff;
     bottom: 0%;
-    position: relative;
+    position: fixed;
     width: 100%;
 }
