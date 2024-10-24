@@ -229,6 +229,6 @@ footer {
     background: #333;
     color: #fff;
     bottom: 0%;
-    position: fixed;
+    position: relative;
     width: 100%;
 }

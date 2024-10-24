@@ -1,12 +1,23 @@
-// You can add interactivity here if needed, like loading posts dynamically or handling forms.
-console.log("JavaScript is working!");
+let originalTitle = document.title;
+    let originalFavicon = document.getElementById('favicon').href;
+    
+    // Change to the "I see you" title and eye favicon
+    function changeTitleAndFavicon() {
+        document.title = "I See You ";
+        document.getElementById('favicon').href = "assets/images/profile.jpg";
+    }
 
-// Show the popup on page load
-window.onload = function() {
-    document.getElementById('construction-popup').style.display = 'flex';
-};
+    // Restore the original title and favicon
+    function restoreTitleAndFavicon() {
+        document.title = originalTitle;
+        document.getElementById('favicon').href = originalFavicon;
+    }
 
-// Close the popup when the button is clicked
-document.getElementById('close-popup').onclick = function() {
-    document.getElementById('construction-popup').style.display = 'none';
-};
+    // Listen for page visibility change
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            changeTitleAndFavicon();
+        } else {
+            restoreTitleAndFavicon();
+        }
+    });
