@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <title>Tutorial Title - Trust404</title>
+    <title>ADB Guide</title>
     <link rel="icon" href="../assets/images/profile.jpg" type="image/x-icon" id="favicon">
     <meta name="description" content="404 Trust Not Found tutorial page.">
     <meta name="author" content="Known, Tech Enthusiast">
@@ -30,13 +30,43 @@
         <main>
             <div class="content">
                 <h2>ADB</h2>
-                <img src="../assets/images/tutorials/adb_tutorial/tutorial-placeholder.jpg" alt="Tutorial Image" class="tutorial-image">
+                <img src="../assets/images/tutorials/adb_tutorial/android_debug.svg" alt="Tutorial Image" class="tutorial-image">
                 <article>
                     <h3>Introduction</h3>
-                    <p>Start your tutorial content here. Provide an overview and details about the tutorial topic.</p>
+                    <p>So you are looking to uninstall default apps, or just sideload a specific app not present on the playstore? Look no further</p>
+                    <h4>Required Tools / Items</h4>
+                    <ul>
+                        <li>1x Android Device (Tablet or Mobile)</li>
+                        <li>1x USB Cable</li>
+                        <li>Android Debug Bridge Installation from <a class="links" href="https://developer.android.com/tools/releases/platform-tools">here</a></li>
+                    </ul>
                     <h3>Steps</h3>
-                    <p>Outline the steps needed to complete the tutorial.</p>
-                    <!-- Add more sections as needed -->
+                    <h4>Enable USB Debuggin</h4>
+                    <p>This step is mostly the same in all android distributions.</p>
+                    <p>Go to <span class="direction">Settings > Developer Options > USB Debugging</span> and toggle the setting to on</p>
+                    <p>If Developer Options is not visible, you can unlock it through <span class="direction">Settings > Status/Details</span> and tapping on <b>Model Number</b> 10 times</p>
+                    <h4>Connect Phone/Tablet to a Computer</h4>
+                    <p>Use a simple USB (type-c etc) to connect</p>
+                    <h4>Open Terminal</h4>
+                    <p>Navigate to the folder where adb.exe is located</p>
+                    <p>run <code>adb.exe shell</code> to find attached devices (be sure to approve the probing on the android device)</p>
+                    <p>It will take a while to load the daemon for the process but if it fails at first just launch it again</p>
+                    <h4>Using Package Manager</h4>
+                    <p>List all installed apps on the device</p>
+                    <code>pm list packages</code>
+                    <p>remove a single application</p>
+                    <code>pm uninstall --user 0 "package_name"</code>
+                    <p>the name is the full path of the app ex. com.android.google.gm (gmail), you could combine grep to find individual named apps such as</p>
+                    <code>pm list packages | grep "search_querry"</code>
+                    <p>Find uninstalled apps that can be recovered</p>
+                    <code>cmd package list packages -u | grep "package_name"</code>
+                    <p>Restore uninstalled packages</p>
+                    <code>cmd package install-existing "package_name"</code>
+                    <p>Install an apk manually to bypass Advanced Protection on android (sideloading)</p>
+                    <code>adb install "path to .apk file"</code>
+
+                    <h2 id="warning">Do NOT forget to disable Debugging After You are done in Developer Settings!</h2>
+                    
                 </article>
             </div>
 
@@ -55,6 +85,6 @@
     <footer>
         <p>&copy; 2024 Trust404. All rights reserved.</p>
     </footer>
-    <script src="assets/js/main_script.js"></script>
+    <script src="../assets/js/eye_script.js"></script>
 </body>
 </html>

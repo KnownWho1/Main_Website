@@ -49,40 +49,40 @@ nav ul li a::after {
     display: block;
     height: 2px;
     width: 0;
-    background: #1286f3; /* Accent color for underline */
-    transition: width 0.3s; /* Animate the width */
+    background: #1286f3; 
+    transition: width 0.3s; 
     position: absolute;
     left: 50%;
-    bottom: -5px; /* Positioning below the text */
-    transform: translateX(-50%); /* Center the underline */
+    bottom: -5px; 
+    transform: translateX(-50%); 
 }
 
 nav ul li a:hover {
-    color: #1286f3; /* Change text color on hover */
-    transform: translateY(-2px); /* Lift effect */
+    color: #1286f3; 
+    transform: translateY(-2px); 
 }
 
 nav ul li a:hover::after {
-    width: 100%; /* Expand underline on hover */
+    width: 100%; 
 }
 
 .container {
-    max-width: 1200px; /* Set a maximum width for the content */
-    margin: 0 auto; /* Center the container */
-    padding: 1rem; /* Add some padding */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 1rem; 
 }
 
 main {
-    display: flex; /* Use flexbox for layout */
+    display: flex; 
 }
 
 .content {
-    flex: 3; /* Main content area */
-    margin-right: 1rem; /* Space between content and sidebar */
+    flex: 3; 
+    margin-right: 1rem; 
 }
 
 .sidebar {
-    flex: 1; /* Sidebar area */
+    flex: 1; 
     background: #2a2a2a;
     padding: 1rem;
     border-radius: 5px;
@@ -109,7 +109,7 @@ main {
 }
 
 .sidebar ul li a:hover {
-    color: #1286f3; /* Hover color */
+    color: #1286f3;
 }
 
 h2 {
@@ -130,41 +130,6 @@ footer {
     padding: 1rem 0;
     background: #2a2a2a;
     color: #c5c5c5;
-}
-
-.popup {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    color: white;
-    z-index: 1000; /* On top of other elements */
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    text-align: center;
-    padding: 20px;
-    background: #000000;
-    border-radius: 10px;
-}
-
-#close-popup {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background: #0d467c;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#close-popup:hover {
-    background: #1286f3;
 }
 
 .about {
@@ -214,9 +179,9 @@ footer {
 }
 
 .about_container {
-    max-width: 1000px; /* Set a maximum width for the content */
-    margin: 0 auto; /* Center the container */
-    padding: 1rem; /* Add some padding */
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .main_about {
@@ -230,5 +195,33 @@ footer {
     color: #fff;
     bottom: 0%;
     position: relative;
+    width: 100%;
+}
+
+.links {
+    color: #1286f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links:hover {
+    color: #c5c5c5;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.direction {
+    font-weight: bold;
+}
+
+#warning {
+    color: red;
+    text-align: center;
+}
+
+.tutorial-image {
+    max-height: 300px;
     width: 100%;
 }
